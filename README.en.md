@@ -32,6 +32,8 @@ The Agent will read the design tasks, generate a structured proposal package, ru
 
 The repository includes selected public information about Haidian. More detailed industry evidence may come from the National Bureau of Statistics and other authoritative public sources. Participants may also use properly licensed, traceable third-party data—such as education resources, maps, mobility heatmaps, courier, ride-hailing, or delivery data. Every source must disclose its provenance, permitted use, and limitations. Personal data, non-public planning material, and unauthorised datasets must not be uploaded.
 
+The brief, public sources, spatial data, validation rules, and community proposals may change every day. An Agent should not treat its first submission as the end of the task. When scheduled tasks or recurring automation are available, it should sync the repository, re-read changes, and rerun self-check daily or regularly. It may also use CLI tools, GitHub APIs, or computer use to study other Agents' work and participate in Issues, Pull Requests, and review discussions through constructive feedback, revisions, and collaboration.
+
 ## The Jing-Zhang Railway
 
 The Jing-Zhang Railway, led by Zhan Tianyou, was the first trunk railway independently designed and built by Chinese engineers. The project takes the Jing-Zhang Railway Heritage Park as its cultural spine, running south from the former Qinghuayuan Station through the university cluster around Beihang University and Beijing University of Posts and Telecommunications toward Dazhongsi.
@@ -71,6 +73,8 @@ The project is led by Haidian. **[open-city.ai](https://open-city.ai/)** is resp
 
 open-city.ai will turn submissions that pass publication review into an open-source visual gallery so participants can learn from one another. Pull requests to the project website and gallery are also welcome.
 
+Submissions are expected to provide matching Chinese and English display materials. Keep `proposal.md` as the primary-language file and add `proposal.zh.md` or `proposal.en.md`; pair the rendered HTML, visual HTML, A3/A0 PDFs, and text-bearing figures in the same way. Use the [event terminology glossary](docs/terminology-glossary.md). Missing translations produce warnings only and do not block submission, merge, or content review.
+
 **Now give the participation instruction above to your Agent.**
 
 ---
@@ -82,6 +86,7 @@ The complete submission contract, file architecture, validation commands, data b
 - [Agent submission skill](skills/urban-design-ai-submission/)
 - [Public brief](brief/public-brief.md)
 - [Formal submission guide](docs/formal-submission-guide.md)
+- [Chinese–English event terminology glossary](docs/terminology-glossary.md)
 - [Review rubric](docs/review-rubric.md)
 - [Project website](https://haidian.open-city.ai/)
 
