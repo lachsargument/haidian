@@ -34,15 +34,18 @@
         "key_area_count"
       ],
       "source_ids": [
-        "SITE-PACKAGE",
-        "SOURCE-REGISTRY",
-        "PROCESSED-FACT-PACK",
-        "OFFICIAL-ANNOUNCEMENT",
         "AGENT-TASKBOOK",
         "BOUNDARY-SOURCE",
-        "KEY-AREA-SOURCE"
+        "KEY-AREA-SOURCE",
+        "OFFICIAL-ANNOUNCEMENT",
+        "OSM-DERIVED-CORRIDOR-20260808",
+        "OSM-SNAPSHOT-20260808",
+        "PROCESSED-FACT-PACK",
+        "SITE-PACKAGE",
+        "SOURCE-REGISTRY"
       ],
       "assumption_ids": [
+        "A-BOUNDARY-001",
         "A-CONTROLS-001"
       ],
       "self_check_ids": [
@@ -86,15 +89,18 @@
         "key_area_count"
       ],
       "source_ids": [
-        "SITE-PACKAGE",
-        "SOURCE-REGISTRY",
-        "PROCESSED-FACT-PACK",
-        "OFFICIAL-ANNOUNCEMENT",
         "AGENT-TASKBOOK",
         "BOUNDARY-SOURCE",
-        "KEY-AREA-SOURCE"
+        "KEY-AREA-SOURCE",
+        "OFFICIAL-ANNOUNCEMENT",
+        "OSM-DERIVED-CORRIDOR-20260808",
+        "OSM-SNAPSHOT-20260808",
+        "PROCESSED-FACT-PACK",
+        "SITE-PACKAGE",
+        "SOURCE-REGISTRY"
       ],
       "assumption_ids": [
+        "A-BOUNDARY-001",
         "A-CONTROLS-001"
       ],
       "self_check_ids": [
@@ -138,15 +144,18 @@
         "key_area_count"
       ],
       "source_ids": [
-        "SITE-PACKAGE",
-        "SOURCE-REGISTRY",
-        "PROCESSED-FACT-PACK",
-        "OFFICIAL-ANNOUNCEMENT",
         "AGENT-TASKBOOK",
         "BOUNDARY-SOURCE",
-        "KEY-AREA-SOURCE"
+        "KEY-AREA-SOURCE",
+        "OFFICIAL-ANNOUNCEMENT",
+        "OSM-DERIVED-CORRIDOR-20260808",
+        "OSM-SNAPSHOT-20260808",
+        "PROCESSED-FACT-PACK",
+        "SITE-PACKAGE",
+        "SOURCE-REGISTRY"
       ],
       "assumption_ids": [
+        "A-BOUNDARY-001",
         "A-CONTROLS-001"
       ],
       "self_check_ids": [
@@ -190,15 +199,18 @@
         "key_area_count"
       ],
       "source_ids": [
-        "SITE-PACKAGE",
-        "SOURCE-REGISTRY",
-        "PROCESSED-FACT-PACK",
-        "OFFICIAL-ANNOUNCEMENT",
         "AGENT-TASKBOOK",
         "BOUNDARY-SOURCE",
-        "KEY-AREA-SOURCE"
+        "KEY-AREA-SOURCE",
+        "OFFICIAL-ANNOUNCEMENT",
+        "OSM-DERIVED-CORRIDOR-20260808",
+        "OSM-SNAPSHOT-20260808",
+        "PROCESSED-FACT-PACK",
+        "SITE-PACKAGE",
+        "SOURCE-REGISTRY"
       ],
       "assumption_ids": [
+        "A-BOUNDARY-001",
         "A-CONTROLS-001"
       ],
       "self_check_ids": [
@@ -242,15 +254,18 @@
         "key_area_count"
       ],
       "source_ids": [
-        "SITE-PACKAGE",
-        "SOURCE-REGISTRY",
-        "PROCESSED-FACT-PACK",
-        "OFFICIAL-ANNOUNCEMENT",
         "AGENT-TASKBOOK",
         "BOUNDARY-SOURCE",
-        "KEY-AREA-SOURCE"
+        "KEY-AREA-SOURCE",
+        "OFFICIAL-ANNOUNCEMENT",
+        "OSM-DERIVED-CORRIDOR-20260808",
+        "OSM-SNAPSHOT-20260808",
+        "PROCESSED-FACT-PACK",
+        "SITE-PACKAGE",
+        "SOURCE-REGISTRY"
       ],
       "assumption_ids": [
+        "A-BOUNDARY-001",
         "A-CONTROLS-001"
       ],
       "self_check_ids": [
@@ -294,15 +309,18 @@
         "key_area_count"
       ],
       "source_ids": [
-        "SITE-PACKAGE",
-        "SOURCE-REGISTRY",
-        "PROCESSED-FACT-PACK",
-        "OFFICIAL-ANNOUNCEMENT",
         "AGENT-TASKBOOK",
         "BOUNDARY-SOURCE",
-        "KEY-AREA-SOURCE"
+        "KEY-AREA-SOURCE",
+        "OFFICIAL-ANNOUNCEMENT",
+        "OSM-DERIVED-CORRIDOR-20260808",
+        "OSM-SNAPSHOT-20260808",
+        "PROCESSED-FACT-PACK",
+        "SITE-PACKAGE",
+        "SOURCE-REGISTRY"
       ],
       "assumption_ids": [
+        "A-BOUNDARY-001",
         "A-CONTROLS-001"
       ],
       "self_check_ids": [

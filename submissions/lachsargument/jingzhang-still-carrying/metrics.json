@@ -7,31 +7,33 @@
   "metrics": {
     "site_area_sqm": {
       "status": "known",
-      "value": 11412825.386,
+      "value": 11400029.220623,
       "unit": "sqm",
       "source_files": [
         "geometry/site_boundary.geojson"
       ],
-      "formula": "polygon_area(submitted_site_boundary)",
-      "confidence": "high",
+      "formula": "polygon_area(site_boundary)",
+      "confidence": "medium",
       "assumptions": [
         "Trusted official boundary is present in the site package."
-      ]
+      ],
+      "note_zh": "recomputed in EPSG:4548 from the derived provisional boundary; must be recomputed again when official polygons are published"
     },
     "building_footprint_area_sqm": {
       "status": "known",
-      "value": 310807.184,
+      "value": 1918666.07509,
       "unit": "sqm",
       "source_files": [
         "geometry/buildings.geojson"
       ],
       "formula": "sum(polygon_area(building_footprints))",
       "confidence": "medium",
-      "assumptions": []
+      "assumptions": [],
+      "note_zh": "recomputed in EPSG:4548 from the derived provisional boundary; must be recomputed again when official polygons are published"
     },
     "green_ratio": {
       "status": "known",
-      "value": 0.123423,
+      "value": 0.099245,
       "unit": "ratio",
       "source_files": [
         "geometry/green_space.geojson",
@@ -39,19 +41,21 @@
       ],
       "formula": "green_space_area_sqm / site_area_sqm",
       "confidence": "medium",
-      "assumptions": []
+      "assumptions": [],
+      "note_zh": "recomputed in EPSG:4548 from the derived provisional boundary; must be recomputed again when official polygons are published"
     },
     "public_space_ratio": {
       "status": "known",
-      "value": 0.073281,
+      "value": 0.060954,
       "unit": "ratio",
       "source_files": [
         "geometry/public_space.geojson",
         "geometry/site_boundary.geojson"
       ],
       "formula": "public_space_area_sqm / site_area_sqm",
-      "confidence": "medium",
-      "assumptions": []
+      "confidence": "low",
+      "assumptions": [],
+      "note_zh": "recomputed in EPSG:4548 from the derived provisional boundary; must be recomputed again when official polygons are published"
     },
     "floor_area_ratio": {
       "status": "unknown",
@@ -75,6 +79,28 @@
       "formula": "count(key_detailed_design_areas)",
       "confidence": "high",
       "assumptions": []
+    },
+    "green_space_area_sqm": {
+      "status": "known",
+      "unit": "sqm",
+      "confidence": "medium",
+      "value": 1131395.779111,
+      "source_files": [
+        "geometry/green_space.geojson"
+      ],
+      "formula": "sum(polygon_area(green_space))",
+      "note_zh": "recomputed in EPSG:4548 from the derived provisional boundary; must be recomputed again when official polygons are published"
+    },
+    "public_space_area_sqm": {
+      "status": "known",
+      "unit": "sqm",
+      "confidence": "low",
+      "value": 694876.405025,
+      "source_files": [
+        "geometry/public_space.geojson"
+      ],
+      "formula": "sum(polygon_area(public_space))",
+      "note_zh": "recomputed in EPSG:4548 from the derived provisional boundary; must be recomputed again when official polygons are published"
     }
   }
 }

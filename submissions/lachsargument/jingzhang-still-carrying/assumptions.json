@@ -4,8 +4,141 @@
     {
       "id": "A-CONTROLS-001",
       "status": "pending_professional_confirmation",
-      "statement": "Detailed regulatory controls, road redlines, ownership, municipal utilities, and engineering constraints must be confirmed from official attachments before statutory use.",
-      "impact": "The package can be reviewed as a formal AI submission only for provided official boundaries and submitted design layers; statutory controls still need professional confirmation."
+      "gap_ref": "GAP-CONTROL-001",
+      "statement": "控规条件（容积率、建筑高度、建筑密度、绿地率、退线、建筑控制线）无官方依据。",
+      "impact": "本方案不给出任何审定开发强度结论；涉及建设强度处一律表述为概念建议与待补条件。"
+    },
+    {
+      "id": "A-BOUNDARY-001",
+      "status": "declared_method",
+      "statement": "提交边界为推定的临时边界。方法：以 OSM 路网/铁路/水系线要素构建面域剖分，边界问题转为单元选择问题；选择带的东西界取自公告 1.4.2 点名道路，按纬度采样为偏移剖面；全模型仅保留一个全局缩放系数，用公告面积 11.4 km² 闭合。",
+      "parameters": {
+        "crs_storage": "EPSG:4326",
+        "crs_area": "EPSG:4548",
+        "partition_line_sources": [
+          "highway=motorway|trunk|primary|secondary|tertiary|unclassified",
+          "railway=*（除 platform / signal_box）",
+          "waterway=river|canal|stream|ditch",
+          "natural=water"
+        ],
+        "min_cell_area_sqm": 200,
+        "adjacency_min_shared_edge_m": 5.0,
+        "west_limit_streets": [
+          "大钟寺东路",
+          "荷清路"
+        ],
+        "east_limit_streets": [
+          "西土城路",
+          "学院路"
+        ],
+        "cell_inclusion_threshold": 0.5,
+        "wedge_scale_k": 0.925,
+        "mean_half_width_m": 607.2,
+        "sensitivity_step_m": 100.0,
+        "result_area_sqm": 11400029.2,
+        "deviation_from_announced_pct": 0.0
+      },
+      "impact": "所有派生指标以此边界为基准；官方 polygon 发布后须整体重算，不得只替换单个文件。"
+    },
+    {
+      "id": "A-BOUNDARY-002",
+      "status": "declared_finding",
+      "statement": "仓库 provisional 条带经度基本恒定（约 116.3397–116.3553），与公告点名的北段西界（荷清路，实际自 x≈442,897 西偏至 x≈441,294）偏离约 0.8–2.4 km，与五道口站、清河站节点位置偏离 0.78–2.7 km。provisional_boundaries_basis.md 自述为依据文字四至与面积拟合的粗略推定，明示仅供 intake，未主张精度；此处不评价其对错，仅说明本方案改以点名道路与既有线位推定。",
+      "impact": "本方案提交几何在北段与仓库 provisional 条带不重合；两者均为 provisional，均非官方红线。"
+    },
+    {
+      "id": "A-ALIGNMENT-001",
+      "status": "declared_method",
+      "statement": "走廊线位取 OSM 连续运营线位（10,025 m，含北京北站接近段）。以 railway=razed 且 name=京包线 的 9 段历史线位独立校核，两者平均偏差 3.1 m、最大 8.7 m。",
+      "impact": "历史线位与现行线位基本重合，走廊连续性可测量，非修辞。"
+    },
+    {
+      "id": "A-KEYAREA-001",
+      "status": "declared_method",
+      "statement": "三处重点区位置取自公告为各区使用的地名线索（五环/清河、五道口/清华东路西口、大钟寺站），经 OSM 节点定位；范围在同一剖分上按公告面积生长。不使用 provisional 矩形定位，理由见 A-BOUNDARY-002。",
+      "parameters": {
+        "zhongzhiyuan_sqm": 1973684,
+        "beijing_ai_origin_sqm": 1040988,
+        "dazhongsi_sqm": 687128,
+        "announced_sqm": [
+          1921000,
+          1043000,
+          720000
+        ],
+        "deviation_pct": [
+          2.7,
+          -0.2,
+          -4.6
+        ]
+      },
+      "impact": "面积偏差在 ±5% 内，来源于剖分单元粒度；三区互不重叠且完全落在提交边界内。"
+    },
+    {
+      "id": "A-RESERVE-001",
+      "status": "design_proposal",
+      "statement": "干线限界按单侧 30 m 预留（总宽 60 m）。该宽度由须通过之物反推确定：低速专用通行空间、慢行、地下干线的竖向投影、待避与交会空间。限界是被需求定义的供给，不是剩余用地。",
+      "impact": "public_space 层与留白用地口径依赖此参数；调整该值将改变 public_space_ratio。"
+    },
+    {
+      "id": "A-LANDUSE-001",
+      "status": "mixed_evidence",
+      "gap_ref": "GAP-PARCEL-001",
+      "statement": "用地分类 80.8% 由 OSM landuse/amenity/leisure 要素按面积多数决支撑并标注 osm_evidenced；19.2% 无公开证据，标注 design_proposal、confidence=low。枚举无工业类，中关村一带 OSM 标为 industrial 的地块以研发园区为主，归 0802 科研用地。construction/brownfield/greenfield 归 16 留白用地，作为公告 1.5.3.1 所指潜力用地的候选。",
+      "impact": "用地布局为概念性结构建议，非现状调查，亦非审定用途；权属与现状建筑底数缺失时不得据此判定拆改留。"
+    },
+    {
+      "id": "A-RESEARCH-001",
+      "status": "cannot_reconstruct",
+      "gap_ref": "GAP-BOUNDARY-001",
+      "statement": "统筹研究范围 43.6 km² 无法由公开文本重建。四至道路（北五环/京藏高速/西直门外大街/万泉河路）全部可定位，零自由参数推定得 56.71 km²，偏差 +30.06%。其中京藏高速与万泉河路同时有定义的纵向区间仅 3.2 km（占所需 8.7 km 的 37%）；但即使在该区间内，四至围出的宽度为 6,261–6,840 m，按 8.7 km 纵长约 58 km²，仍显著大于 43.6 km²。外插不是唯一原因。",
+      "impact": "统筹研究范围在本方案中只按公告文字四至描述，不给出面积复算结论，不作为任何指标的分母。标量锚点固定为总体设计范围 11.4 km²。"
+    },
+    {
+      "id": "A-FRINGE-001",
+      "status": "declared_uncertainty",
+      "statement": "边界不确定性不呈均匀边带，集中在少数不可分割的大单元上。半宽 ±100 m 之间翻转且面积 >3 ha 的单元共 12 个，合计 2.062 km²，占设计范围 18.1%，其中可具名者包括北京交通大学东校区、中国地质大学（北京）、元大都城垣遗址公园。",
+      "impact": "官方 polygon 发布后，复核可自这 12 块开始，不必重画整条边界。清单见 geometry/constraints.geojson。"
+    },
+    {
+      "id": "A-HERITAGE-001",
+      "status": "pending_official_data",
+      "gap_ref": "GAP-HERITAGE-001",
+      "statement": "京张铁路遗址公园与清华园车站旧址的文保控制范围与建设控制地带无官方依据。",
+      "impact": "清华园车站旧址周边一切地下与近接动作列为待补条件；公共空间与地标方案保持保守，不触碰未知控制线。"
+    },
+    {
+      "id": "A-MUNICIPAL-001",
+      "status": "pending_official_data",
+      "gap_ref": "GAP-MUNICIPAL-001",
+      "statement": "市政管线、消防、防洪排涝与海绵城市条件无官方依据。",
+      "impact": "地下部分一切表述止于空间预留与容量分配原则，不涉管线迁改、断面尺寸、能源负荷或市政容量测算。"
+    },
+    {
+      "id": "A-ROAD-001",
+      "status": "pending_official_data",
+      "gap_ref": "GAP-ROAD-001",
+      "statement": "道路红线与断面无官方依据；roads.geojson 为 OSM 中心线，非红线。",
+      "impact": "交通组织只作概念建议，不给出工程线位或施工可行性结论。"
+    },
+    {
+      "id": "A-BUILDING-001",
+      "status": "existing_condition_only",
+      "gap_ref": "GAP-BUILDING-001",
+      "statement": "buildings.geojson 为 OSM 建筑基底，无高度、层数、用途与建成年代。",
+      "impact": "建筑与拆改留策略只作概念指引，不编造高度层数，不指定保留拆除。"
+    },
+    {
+      "id": "A-SERVICE-001",
+      "status": "pending_official_data",
+      "gap_ref": "GAP-SERVICE-001",
+      "statement": "公共服务设施底数无官方依据。",
+      "impact": "只提出服务体系与待核设施清单，不编造学校、医疗、养老容量。"
+    },
+    {
+      "id": "A-RECOMPUTE-001",
+      "status": "declared_method",
+      "statement": "投稿目录不接受可执行脚本（validate_submission.py 允许的文件类型不含 .py），故复算能力以规格交付：本文件记录全部参数，visual/assets/recompute.json 提供机读配方。",
+      "impact": "任何具备 OSM 快照与本文件参数的团队可重现全部几何与指标。"
     }
   ]
 }

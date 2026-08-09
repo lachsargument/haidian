@@ -8,52 +8,37 @@
       "required": true,
       "status": "complete",
       "proposal_sections": [
-        "三层范围工作框架",
-        "总体设计范围城市更新与控规深度城市设计",
-        "重点区域详细设计",
-        "风险、版权与合规说明"
+        "设计依据与资料清单",
+        "三层范围工作框架"
       ],
       "drawing_refs": [
         "drawings/a3-booklet.pdf",
         "drawings/a0-boards.pdf"
       ],
       "geometry_refs": [
-        "geometry/site_boundary.geojson",
-        "geometry/key_areas.geojson",
         "geometry/land_use.geojson",
         "geometry/buildings.geojson",
-        "geometry/roads.geojson",
-        "geometry/green_space.geojson",
-        "geometry/public_space.geojson",
-        "geometry/constraints.geojson",
-        "geometry/phasing.geojson"
+        "geometry/roads.geojson"
       ],
       "metric_refs": [
-        "site_area_sqm",
-        "building_footprint_area_sqm",
-        "green_ratio",
-        "public_space_ratio",
-        "key_area_count"
+        "building_footprint_area_sqm"
       ],
       "source_ids": [
-        "SITE-PACKAGE",
-        "SOURCE-REGISTRY",
-        "PROCESSED-FACT-PACK",
-        "OFFICIAL-ANNOUNCEMENT",
         "AGENT-TASKBOOK",
-        "BOUNDARY-SOURCE",
-        "KEY-AREA-SOURCE"
+        "OFFICIAL-ANNOUNCEMENT",
+        "OSM-DERIVED-CORRIDOR-20260808",
+        "OSM-SNAPSHOT-20260808"
       ],
       "assumption_ids": [
-        "A-CONTROLS-001"
+        "A-BUILDING-001",
+        "A-LANDUSE-001"
       ],
       "self_check_ids": [
         "BOUNDARY_TRUST",
-        "KEY_AREAS_TRUST",
         "LAND_USE_TOPOLOGY",
-        "VISUAL_STATIC"
+        "PROFESSIONAL_EVIDENCE"
       ],
-      "evidence_summary_zh": "本深度项由 proposal.md 的可读解释、图纸成果、结构化图层、指标复算和自检结果共同支撑。"
+      "evidence_summary_zh": "现状以 OSM 快照为证据层：用地 80.8% 有要素支撑、建筑基底 1478 个、道路中心线 619 条；权属与建筑属性缺失部分逐条列入资料缺口。"
     },
     {
       "item_id": "three_level_scope_framework",
@@ -62,10 +47,7 @@
       "required": true,
       "status": "complete",
       "proposal_sections": [
-        "三层范围工作框架",
-        "总体设计范围城市更新与控规深度城市设计",
-        "重点区域详细设计",
-        "风险、版权与合规说明"
+        "三层范围工作框架"
       ],
       "drawing_refs": [
         "drawings/a3-booklet.pdf",
@@ -74,40 +56,29 @@
       "geometry_refs": [
         "geometry/site_boundary.geojson",
         "geometry/key_areas.geojson",
-        "geometry/land_use.geojson",
-        "geometry/buildings.geojson",
-        "geometry/roads.geojson",
-        "geometry/green_space.geojson",
-        "geometry/public_space.geojson",
-        "geometry/constraints.geojson",
-        "geometry/phasing.geojson"
+        "geometry/constraints.geojson"
       ],
       "metric_refs": [
         "site_area_sqm",
-        "building_footprint_area_sqm",
-        "green_ratio",
-        "public_space_ratio",
         "key_area_count"
       ],
       "source_ids": [
-        "SITE-PACKAGE",
-        "SOURCE-REGISTRY",
-        "PROCESSED-FACT-PACK",
-        "OFFICIAL-ANNOUNCEMENT",
         "AGENT-TASKBOOK",
-        "BOUNDARY-SOURCE",
-        "KEY-AREA-SOURCE"
+        "OFFICIAL-ANNOUNCEMENT",
+        "OSM-DERIVED-CORRIDOR-20260808",
+        "OSM-SNAPSHOT-20260808"
       ],
       "assumption_ids": [
-        "A-CONTROLS-001"
+        "A-BOUNDARY-001",
+        "A-BOUNDARY-002",
+        "A-RESEARCH-001"
       ],
       "self_check_ids": [
         "BOUNDARY_TRUST",
-        "KEY_AREAS_TRUST",
         "LAND_USE_TOPOLOGY",
-        "VISUAL_STATIC"
+        "PROFESSIONAL_EVIDENCE"
       ],
-      "evidence_summary_zh": "本深度项由 proposal.md 的可读解释、图纸成果、结构化图层、指标复算和自检结果共同支撑。"
+      "evidence_summary_zh": "总体设计范围推定至 11,400,029 m²（偏差 +0.000%）；统筹研究范围经零参数推定得 56.71 km²（+30.06%），判定无法由公开文本重建并列为缺口。"
     },
     {
       "item_id": "overall_spatial_structure",
@@ -116,10 +87,7 @@
       "required": true,
       "status": "complete",
       "proposal_sections": [
-        "三层范围工作框架",
-        "总体设计范围城市更新与控规深度城市设计",
-        "重点区域详细设计",
-        "风险、版权与合规说明"
+        "总体设计范围城市更新与控规深度城市设计"
       ],
       "drawing_refs": [
         "drawings/a3-booklet.pdf",
@@ -127,41 +95,28 @@
       ],
       "geometry_refs": [
         "geometry/site_boundary.geojson",
-        "geometry/key_areas.geojson",
-        "geometry/land_use.geojson",
-        "geometry/buildings.geojson",
-        "geometry/roads.geojson",
-        "geometry/green_space.geojson",
         "geometry/public_space.geojson",
-        "geometry/constraints.geojson",
-        "geometry/phasing.geojson"
+        "geometry/key_areas.geojson"
       ],
       "metric_refs": [
-        "site_area_sqm",
-        "building_footprint_area_sqm",
-        "green_ratio",
-        "public_space_ratio",
-        "key_area_count"
+        "site_area_sqm"
       ],
       "source_ids": [
-        "SITE-PACKAGE",
-        "SOURCE-REGISTRY",
-        "PROCESSED-FACT-PACK",
-        "OFFICIAL-ANNOUNCEMENT",
         "AGENT-TASKBOOK",
-        "BOUNDARY-SOURCE",
-        "KEY-AREA-SOURCE"
+        "OFFICIAL-ANNOUNCEMENT",
+        "OSM-DERIVED-CORRIDOR-20260808",
+        "OSM-SNAPSHOT-20260808"
       ],
       "assumption_ids": [
-        "A-CONTROLS-001"
+        "A-ALIGNMENT-001",
+        "A-RESERVE-001"
       ],
       "self_check_ids": [
         "BOUNDARY_TRUST",
-        "KEY_AREAS_TRUST",
         "LAND_USE_TOPOLOGY",
-        "VISUAL_STATIC"
+        "PROFESSIONAL_EVIDENCE"
       ],
-      "evidence_summary_zh": "本深度项由 proposal.md 的可读解释、图纸成果、结构化图层、指标复算和自检结果共同支撑。"
+      "evidence_summary_zh": "结构以干线组织：联络线—会让站—咽喉区，三处重点区按其在线上的位置定义角色而非产业标签。"
     },
     {
       "item_id": "land_use_layout",
@@ -170,52 +125,33 @@
       "required": true,
       "status": "complete",
       "proposal_sections": [
-        "三层范围工作框架",
-        "总体设计范围城市更新与控规深度城市设计",
-        "重点区域详细设计",
-        "风险、版权与合规说明"
+        "用地、建筑规模与拆改留方案"
       ],
       "drawing_refs": [
         "drawings/a3-booklet.pdf",
         "drawings/a0-boards.pdf"
       ],
       "geometry_refs": [
-        "geometry/site_boundary.geojson",
-        "geometry/key_areas.geojson",
-        "geometry/land_use.geojson",
-        "geometry/buildings.geojson",
-        "geometry/roads.geojson",
-        "geometry/green_space.geojson",
-        "geometry/public_space.geojson",
-        "geometry/constraints.geojson",
-        "geometry/phasing.geojson"
+        "geometry/land_use.geojson"
       ],
       "metric_refs": [
-        "site_area_sqm",
-        "building_footprint_area_sqm",
-        "green_ratio",
-        "public_space_ratio",
-        "key_area_count"
+        "site_area_sqm"
       ],
       "source_ids": [
-        "SITE-PACKAGE",
-        "SOURCE-REGISTRY",
-        "PROCESSED-FACT-PACK",
-        "OFFICIAL-ANNOUNCEMENT",
         "AGENT-TASKBOOK",
-        "BOUNDARY-SOURCE",
-        "KEY-AREA-SOURCE"
+        "OFFICIAL-ANNOUNCEMENT",
+        "OSM-DERIVED-CORRIDOR-20260808",
+        "OSM-SNAPSHOT-20260808"
       ],
       "assumption_ids": [
-        "A-CONTROLS-001"
+        "A-LANDUSE-001"
       ],
       "self_check_ids": [
         "BOUNDARY_TRUST",
-        "KEY_AREAS_TRUST",
         "LAND_USE_TOPOLOGY",
-        "VISUAL_STATIC"
+        "PROFESSIONAL_EVIDENCE"
       ],
-      "evidence_summary_zh": "本深度项由 proposal.md 的可读解释、图纸成果、结构化图层、指标复算和自检结果共同支撑。"
+      "evidence_summary_zh": "用地为同一面域剖分的 256 个单元，精确无缝铺满设计范围（缝隙 −0.00 m²），按 MNR 分类编码，证据与建议逐要素标注。"
     },
     {
       "item_id": "development_intensity_controls",
@@ -224,52 +160,34 @@
       "required": true,
       "status": "complete",
       "proposal_sections": [
-        "三层范围工作框架",
-        "总体设计范围城市更新与控规深度城市设计",
-        "重点区域详细设计",
-        "风险、版权与合规说明"
+        "用地、建筑规模与拆改留方案",
+        "指标体系、面积复算与合规矩阵"
       ],
       "drawing_refs": [
         "drawings/a3-booklet.pdf",
         "drawings/a0-boards.pdf"
       ],
       "geometry_refs": [
-        "geometry/site_boundary.geojson",
-        "geometry/key_areas.geojson",
-        "geometry/land_use.geojson",
-        "geometry/buildings.geojson",
-        "geometry/roads.geojson",
-        "geometry/green_space.geojson",
-        "geometry/public_space.geojson",
-        "geometry/constraints.geojson",
-        "geometry/phasing.geojson"
+        "geometry/land_use.geojson"
       ],
       "metric_refs": [
-        "site_area_sqm",
-        "building_footprint_area_sqm",
-        "green_ratio",
-        "public_space_ratio",
-        "key_area_count"
+        "site_area_sqm"
       ],
       "source_ids": [
-        "SITE-PACKAGE",
-        "SOURCE-REGISTRY",
-        "PROCESSED-FACT-PACK",
-        "OFFICIAL-ANNOUNCEMENT",
         "AGENT-TASKBOOK",
-        "BOUNDARY-SOURCE",
-        "KEY-AREA-SOURCE"
+        "OFFICIAL-ANNOUNCEMENT",
+        "OSM-DERIVED-CORRIDOR-20260808",
+        "OSM-SNAPSHOT-20260808"
       ],
       "assumption_ids": [
         "A-CONTROLS-001"
       ],
       "self_check_ids": [
         "BOUNDARY_TRUST",
-        "KEY_AREAS_TRUST",
         "LAND_USE_TOPOLOGY",
-        "VISUAL_STATIC"
+        "PROFESSIONAL_EVIDENCE"
       ],
-      "evidence_summary_zh": "本深度项由 proposal.md 的可读解释、图纸成果、结构化图层、指标复算和自检结果共同支撑。"
+      "evidence_summary_zh": "无官方控规条件，故不给出容积率、建筑密度、高度等审定指标；本项以待确认条件清单和强度分区原则回应，并明确其非法定效力。"
     },
     {
       "item_id": "height_massing_character",
@@ -278,52 +196,35 @@
       "required": true,
       "status": "complete",
       "proposal_sections": [
-        "三层范围工作框架",
-        "总体设计范围城市更新与控规深度城市设计",
-        "重点区域详细设计",
-        "风险、版权与合规说明"
+        "蓝绿空间、公共空间与城市风貌",
+        "用地、建筑规模与拆改留方案"
       ],
       "drawing_refs": [
         "drawings/a3-booklet.pdf",
         "drawings/a0-boards.pdf"
       ],
       "geometry_refs": [
-        "geometry/site_boundary.geojson",
-        "geometry/key_areas.geojson",
-        "geometry/land_use.geojson",
-        "geometry/buildings.geojson",
-        "geometry/roads.geojson",
-        "geometry/green_space.geojson",
-        "geometry/public_space.geojson",
-        "geometry/constraints.geojson",
-        "geometry/phasing.geojson"
+        "geometry/buildings.geojson"
       ],
       "metric_refs": [
-        "site_area_sqm",
-        "building_footprint_area_sqm",
-        "green_ratio",
-        "public_space_ratio",
-        "key_area_count"
+        "building_footprint_area_sqm"
       ],
       "source_ids": [
-        "SITE-PACKAGE",
-        "SOURCE-REGISTRY",
-        "PROCESSED-FACT-PACK",
-        "OFFICIAL-ANNOUNCEMENT",
         "AGENT-TASKBOOK",
-        "BOUNDARY-SOURCE",
-        "KEY-AREA-SOURCE"
+        "OFFICIAL-ANNOUNCEMENT",
+        "OSM-DERIVED-CORRIDOR-20260808",
+        "OSM-SNAPSHOT-20260808"
       ],
       "assumption_ids": [
+        "A-BUILDING-001",
         "A-CONTROLS-001"
       ],
       "self_check_ids": [
         "BOUNDARY_TRUST",
-        "KEY_AREAS_TRUST",
         "LAND_USE_TOPOLOGY",
-        "VISUAL_STATIC"
+        "PROFESSIONAL_EVIDENCE"
       ],
-      "evidence_summary_zh": "本深度项由 proposal.md 的可读解释、图纸成果、结构化图层、指标复算和自检结果共同支撑。"
+      "evidence_summary_zh": "无建筑高度与层数底数，故风貌控制以界面连续性、限界断面与沿线视线关系表达，不编造高度数值。"
     },
     {
       "item_id": "retain_renovate_demolish",
@@ -332,52 +233,37 @@
       "required": true,
       "status": "complete",
       "proposal_sections": [
-        "三层范围工作框架",
-        "总体设计范围城市更新与控规深度城市设计",
-        "重点区域详细设计",
-        "风险、版权与合规说明"
+        "用地、建筑规模与拆改留方案",
+        "更新项目清单、实施政策与分期计划"
       ],
       "drawing_refs": [
         "drawings/a3-booklet.pdf",
         "drawings/a0-boards.pdf"
       ],
       "geometry_refs": [
-        "geometry/site_boundary.geojson",
-        "geometry/key_areas.geojson",
-        "geometry/land_use.geojson",
         "geometry/buildings.geojson",
-        "geometry/roads.geojson",
-        "geometry/green_space.geojson",
-        "geometry/public_space.geojson",
-        "geometry/constraints.geojson",
+        "geometry/land_use.geojson",
         "geometry/phasing.geojson"
       ],
       "metric_refs": [
-        "site_area_sqm",
-        "building_footprint_area_sqm",
-        "green_ratio",
-        "public_space_ratio",
-        "key_area_count"
+        "building_footprint_area_sqm"
       ],
       "source_ids": [
-        "SITE-PACKAGE",
-        "SOURCE-REGISTRY",
-        "PROCESSED-FACT-PACK",
-        "OFFICIAL-ANNOUNCEMENT",
         "AGENT-TASKBOOK",
-        "BOUNDARY-SOURCE",
-        "KEY-AREA-SOURCE"
+        "OFFICIAL-ANNOUNCEMENT",
+        "OSM-DERIVED-CORRIDOR-20260808",
+        "OSM-SNAPSHOT-20260808"
       ],
       "assumption_ids": [
-        "A-CONTROLS-001"
+        "A-BUILDING-001",
+        "A-LANDUSE-001"
       ],
       "self_check_ids": [
         "BOUNDARY_TRUST",
-        "KEY_AREAS_TRUST",
         "LAND_USE_TOPOLOGY",
-        "VISUAL_STATIC"
+        "PROFESSIONAL_EVIDENCE"
       ],
-      "evidence_summary_zh": "本深度项由 proposal.md 的可读解释、图纸成果、结构化图层、指标复算和自检结果共同支撑。"
+      "evidence_summary_zh": "无权属与宗地边界，故拆改留仅提出低扰动更新的判别原则与概念分区，不指定具体地块结论。"
     },
     {
       "item_id": "traffic_rail_slow_parking",
@@ -386,52 +272,34 @@
       "required": true,
       "status": "complete",
       "proposal_sections": [
-        "三层范围工作框架",
-        "总体设计范围城市更新与控规深度城市设计",
-        "重点区域详细设计",
-        "风险、版权与合规说明"
+        "交通、轨道、市政与公共服务设施"
       ],
       "drawing_refs": [
         "drawings/a3-booklet.pdf",
         "drawings/a0-boards.pdf"
       ],
       "geometry_refs": [
-        "geometry/site_boundary.geojson",
-        "geometry/key_areas.geojson",
-        "geometry/land_use.geojson",
-        "geometry/buildings.geojson",
         "geometry/roads.geojson",
-        "geometry/green_space.geojson",
-        "geometry/public_space.geojson",
-        "geometry/constraints.geojson",
-        "geometry/phasing.geojson"
+        "geometry/public_space.geojson"
       ],
       "metric_refs": [
-        "site_area_sqm",
-        "building_footprint_area_sqm",
-        "green_ratio",
-        "public_space_ratio",
-        "key_area_count"
+        "public_space_ratio"
       ],
       "source_ids": [
-        "SITE-PACKAGE",
-        "SOURCE-REGISTRY",
-        "PROCESSED-FACT-PACK",
-        "OFFICIAL-ANNOUNCEMENT",
         "AGENT-TASKBOOK",
-        "BOUNDARY-SOURCE",
-        "KEY-AREA-SOURCE"
+        "OFFICIAL-ANNOUNCEMENT",
+        "OSM-DERIVED-CORRIDOR-20260808",
+        "OSM-SNAPSHOT-20260808"
       ],
       "assumption_ids": [
-        "A-CONTROLS-001"
+        "A-ROAD-001"
       ],
       "self_check_ids": [
         "BOUNDARY_TRUST",
-        "KEY_AREAS_TRUST",
         "LAND_USE_TOPOLOGY",
-        "VISUAL_STATIC"
+        "PROFESSIONAL_EVIDENCE"
       ],
-      "evidence_summary_zh": "本深度项由 proposal.md 的可读解释、图纸成果、结构化图层、指标复算和自检结果共同支撑。"
+      "evidence_summary_zh": "道路层为 OSM 中心线而非红线；慢行连续性、轨道接驳与低速运行线组织均表述为概念建议。"
     },
     {
       "item_id": "municipal_new_infrastructure",
@@ -440,52 +308,34 @@
       "required": true,
       "status": "complete",
       "proposal_sections": [
-        "三层范围工作框架",
-        "总体设计范围城市更新与控规深度城市设计",
-        "重点区域详细设计",
-        "风险、版权与合规说明"
+        "交通、轨道、市政与公共服务设施"
       ],
       "drawing_refs": [
         "drawings/a3-booklet.pdf",
         "drawings/a0-boards.pdf"
       ],
       "geometry_refs": [
-        "geometry/site_boundary.geojson",
-        "geometry/key_areas.geojson",
-        "geometry/land_use.geojson",
-        "geometry/buildings.geojson",
-        "geometry/roads.geojson",
-        "geometry/green_space.geojson",
-        "geometry/public_space.geojson",
-        "geometry/constraints.geojson",
-        "geometry/phasing.geojson"
+        "geometry/public_space.geojson"
       ],
       "metric_refs": [
-        "site_area_sqm",
-        "building_footprint_area_sqm",
-        "green_ratio",
-        "public_space_ratio",
-        "key_area_count"
+        "public_space_area_sqm"
       ],
       "source_ids": [
-        "SITE-PACKAGE",
-        "SOURCE-REGISTRY",
-        "PROCESSED-FACT-PACK",
-        "OFFICIAL-ANNOUNCEMENT",
         "AGENT-TASKBOOK",
-        "BOUNDARY-SOURCE",
-        "KEY-AREA-SOURCE"
+        "OFFICIAL-ANNOUNCEMENT",
+        "OSM-DERIVED-CORRIDOR-20260808",
+        "OSM-SNAPSHOT-20260808"
       ],
       "assumption_ids": [
-        "A-CONTROLS-001"
+        "A-MUNICIPAL-001",
+        "A-RESERVE-001"
       ],
       "self_check_ids": [
         "BOUNDARY_TRUST",
-        "KEY_AREAS_TRUST",
         "LAND_USE_TOPOLOGY",
-        "VISUAL_STATIC"
+        "PROFESSIONAL_EVIDENCE"
       ],
-      "evidence_summary_zh": "本深度项由 proposal.md 的可读解释、图纸成果、结构化图层、指标复算和自检结果共同支撑。"
+      "evidence_summary_zh": "地下部分止于空间预留与容量分配原则，不涉管线迁改、断面尺寸与市政容量测算。"
     },
     {
       "item_id": "blue_green_public_space",
@@ -494,52 +344,36 @@
       "required": true,
       "status": "complete",
       "proposal_sections": [
-        "三层范围工作框架",
-        "总体设计范围城市更新与控规深度城市设计",
-        "重点区域详细设计",
-        "风险、版权与合规说明"
+        "蓝绿空间、公共空间与城市风貌"
       ],
       "drawing_refs": [
         "drawings/a3-booklet.pdf",
         "drawings/a0-boards.pdf"
       ],
       "geometry_refs": [
-        "geometry/site_boundary.geojson",
-        "geometry/key_areas.geojson",
-        "geometry/land_use.geojson",
-        "geometry/buildings.geojson",
-        "geometry/roads.geojson",
         "geometry/green_space.geojson",
-        "geometry/public_space.geojson",
-        "geometry/constraints.geojson",
-        "geometry/phasing.geojson"
+        "geometry/public_space.geojson"
       ],
       "metric_refs": [
-        "site_area_sqm",
-        "building_footprint_area_sqm",
         "green_ratio",
-        "public_space_ratio",
-        "key_area_count"
+        "public_space_ratio"
       ],
       "source_ids": [
-        "SITE-PACKAGE",
-        "SOURCE-REGISTRY",
-        "PROCESSED-FACT-PACK",
-        "OFFICIAL-ANNOUNCEMENT",
         "AGENT-TASKBOOK",
-        "BOUNDARY-SOURCE",
-        "KEY-AREA-SOURCE"
+        "OFFICIAL-ANNOUNCEMENT",
+        "OSM-DERIVED-CORRIDOR-20260808",
+        "OSM-SNAPSHOT-20260808"
       ],
       "assumption_ids": [
-        "A-CONTROLS-001"
+        "A-HERITAGE-001",
+        "A-RESERVE-001"
       ],
       "self_check_ids": [
         "BOUNDARY_TRUST",
-        "KEY_AREAS_TRUST",
         "LAND_USE_TOPOLOGY",
-        "VISUAL_STATIC"
+        "PROFESSIONAL_EVIDENCE"
       ],
-      "evidence_summary_zh": "本深度项由 proposal.md 的可读解释、图纸成果、结构化图层、指标复算和自检结果共同支撑。"
+      "evidence_summary_zh": "绿地取 OSM 既有公园裁切（green_ratio 0.099245）；公共空间为干线限界与三处节点（public_space_ratio 0.060954），限界宽度由须通过之物反推。"
     },
     {
       "item_id": "three_key_area_detailed_design",
@@ -548,52 +382,35 @@
       "required": true,
       "status": "complete",
       "proposal_sections": [
-        "三层范围工作框架",
-        "总体设计范围城市更新与控规深度城市设计",
-        "重点区域详细设计",
-        "风险、版权与合规说明"
+        "重点区域详细设计"
       ],
       "drawing_refs": [
         "drawings/a3-booklet.pdf",
         "drawings/a0-boards.pdf"
       ],
       "geometry_refs": [
-        "geometry/site_boundary.geojson",
         "geometry/key_areas.geojson",
         "geometry/land_use.geojson",
-        "geometry/buildings.geojson",
-        "geometry/roads.geojson",
-        "geometry/green_space.geojson",
-        "geometry/public_space.geojson",
-        "geometry/constraints.geojson",
-        "geometry/phasing.geojson"
+        "geometry/public_space.geojson"
       ],
       "metric_refs": [
-        "site_area_sqm",
-        "building_footprint_area_sqm",
-        "green_ratio",
-        "public_space_ratio",
         "key_area_count"
       ],
       "source_ids": [
-        "SITE-PACKAGE",
-        "SOURCE-REGISTRY",
-        "PROCESSED-FACT-PACK",
-        "OFFICIAL-ANNOUNCEMENT",
         "AGENT-TASKBOOK",
-        "BOUNDARY-SOURCE",
-        "KEY-AREA-SOURCE"
+        "OFFICIAL-ANNOUNCEMENT",
+        "OSM-DERIVED-CORRIDOR-20260808",
+        "OSM-SNAPSHOT-20260808"
       ],
       "assumption_ids": [
-        "A-CONTROLS-001"
+        "A-KEYAREA-001"
       ],
       "self_check_ids": [
         "BOUNDARY_TRUST",
-        "KEY_AREAS_TRUST",
         "LAND_USE_TOPOLOGY",
-        "VISUAL_STATIC"
+        "PROFESSIONAL_EVIDENCE"
       ],
-      "evidence_summary_zh": "本深度项由 proposal.md 的可读解释、图纸成果、结构化图层、指标复算和自检结果共同支撑。"
+      "evidence_summary_zh": "三区位置取自公告地名线索经 OSM 定位，范围在同一剖分上按公告面积生长，偏差 +2.7% / −0.2% / −4.6%，互不重叠且完全落在设计范围内。"
     },
     {
       "item_id": "renewal_project_list",
@@ -602,52 +419,34 @@
       "required": true,
       "status": "complete",
       "proposal_sections": [
-        "三层范围工作框架",
-        "总体设计范围城市更新与控规深度城市设计",
-        "重点区域详细设计",
-        "风险、版权与合规说明"
+        "更新项目清单、实施政策与分期计划"
       ],
       "drawing_refs": [
         "drawings/a3-booklet.pdf",
         "drawings/a0-boards.pdf"
       ],
       "geometry_refs": [
-        "geometry/site_boundary.geojson",
-        "geometry/key_areas.geojson",
-        "geometry/land_use.geojson",
-        "geometry/buildings.geojson",
-        "geometry/roads.geojson",
-        "geometry/green_space.geojson",
-        "geometry/public_space.geojson",
-        "geometry/constraints.geojson",
-        "geometry/phasing.geojson"
+        "geometry/phasing.geojson",
+        "geometry/land_use.geojson"
       ],
       "metric_refs": [
-        "site_area_sqm",
-        "building_footprint_area_sqm",
-        "green_ratio",
-        "public_space_ratio",
-        "key_area_count"
+        "site_area_sqm"
       ],
       "source_ids": [
-        "SITE-PACKAGE",
-        "SOURCE-REGISTRY",
-        "PROCESSED-FACT-PACK",
-        "OFFICIAL-ANNOUNCEMENT",
         "AGENT-TASKBOOK",
-        "BOUNDARY-SOURCE",
-        "KEY-AREA-SOURCE"
+        "OFFICIAL-ANNOUNCEMENT",
+        "OSM-DERIVED-CORRIDOR-20260808",
+        "OSM-SNAPSHOT-20260808"
       ],
       "assumption_ids": [
-        "A-CONTROLS-001"
+        "A-LANDUSE-001"
       ],
       "self_check_ids": [
         "BOUNDARY_TRUST",
-        "KEY_AREAS_TRUST",
         "LAND_USE_TOPOLOGY",
-        "VISUAL_STATIC"
+        "PROFESSIONAL_EVIDENCE"
       ],
-      "evidence_summary_zh": "本深度项由 proposal.md 的可读解释、图纸成果、结构化图层、指标复算和自检结果共同支撑。"
+      "evidence_summary_zh": "更新项目以留白用地（16）中经 OSM 实证的建设/棕地/未利用地作为潜力用地候选，不含权属判断。"
     },
     {
       "item_id": "phasing_implementation",
@@ -656,52 +455,34 @@
       "required": true,
       "status": "complete",
       "proposal_sections": [
-        "三层范围工作框架",
-        "总体设计范围城市更新与控规深度城市设计",
-        "重点区域详细设计",
-        "风险、版权与合规说明"
+        "更新项目清单、实施政策与分期计划"
       ],
       "drawing_refs": [
         "drawings/a3-booklet.pdf",
         "drawings/a0-boards.pdf"
       ],
       "geometry_refs": [
-        "geometry/site_boundary.geojson",
-        "geometry/key_areas.geojson",
-        "geometry/land_use.geojson",
-        "geometry/buildings.geojson",
-        "geometry/roads.geojson",
-        "geometry/green_space.geojson",
-        "geometry/public_space.geojson",
-        "geometry/constraints.geojson",
         "geometry/phasing.geojson"
       ],
       "metric_refs": [
-        "site_area_sqm",
-        "building_footprint_area_sqm",
-        "green_ratio",
-        "public_space_ratio",
         "key_area_count"
       ],
       "source_ids": [
-        "SITE-PACKAGE",
-        "SOURCE-REGISTRY",
-        "PROCESSED-FACT-PACK",
-        "OFFICIAL-ANNOUNCEMENT",
         "AGENT-TASKBOOK",
-        "BOUNDARY-SOURCE",
-        "KEY-AREA-SOURCE"
+        "OFFICIAL-ANNOUNCEMENT",
+        "OSM-DERIVED-CORRIDOR-20260808",
+        "OSM-SNAPSHOT-20260808"
       ],
       "assumption_ids": [
-        "A-CONTROLS-001"
+        "A-KEYAREA-001",
+        "A-RECOMPUTE-001"
       ],
       "self_check_ids": [
         "BOUNDARY_TRUST",
-        "KEY_AREAS_TRUST",
         "LAND_USE_TOPOLOGY",
-        "VISUAL_STATIC"
+        "PROFESSIONAL_EVIDENCE"
       ],
-      "evidence_summary_zh": "本深度项由 proposal.md 的可读解释、图纸成果、结构化图层、指标复算和自检结果共同支撑。"
+      "evidence_summary_zh": "分期按干线组织：会让站段—联络线段—咽喉区段，不编造投资时序与政府承诺。"
     },
     {
       "item_id": "metrics_recalculation",
@@ -710,10 +491,7 @@
       "required": true,
       "status": "complete",
       "proposal_sections": [
-        "三层范围工作框架",
-        "总体设计范围城市更新与控规深度城市设计",
-        "重点区域详细设计",
-        "风险、版权与合规说明"
+        "指标体系、面积复算与合规矩阵"
       ],
       "drawing_refs": [
         "drawings/a3-booklet.pdf",
@@ -721,41 +499,33 @@
       ],
       "geometry_refs": [
         "geometry/site_boundary.geojson",
-        "geometry/key_areas.geojson",
-        "geometry/land_use.geojson",
-        "geometry/buildings.geojson",
-        "geometry/roads.geojson",
         "geometry/green_space.geojson",
         "geometry/public_space.geojson",
-        "geometry/constraints.geojson",
-        "geometry/phasing.geojson"
+        "geometry/buildings.geojson"
       ],
       "metric_refs": [
         "site_area_sqm",
-        "building_footprint_area_sqm",
         "green_ratio",
         "public_space_ratio",
-        "key_area_count"
+        "building_footprint_area_sqm"
       ],
       "source_ids": [
-        "SITE-PACKAGE",
-        "SOURCE-REGISTRY",
-        "PROCESSED-FACT-PACK",
-        "OFFICIAL-ANNOUNCEMENT",
         "AGENT-TASKBOOK",
-        "BOUNDARY-SOURCE",
-        "KEY-AREA-SOURCE"
+        "OFFICIAL-ANNOUNCEMENT",
+        "OSM-DERIVED-CORRIDOR-20260808",
+        "OSM-SNAPSHOT-20260808"
       ],
       "assumption_ids": [
-        "A-CONTROLS-001"
+        "A-BOUNDARY-001",
+        "A-FRINGE-001",
+        "A-RECOMPUTE-001"
       ],
       "self_check_ids": [
         "BOUNDARY_TRUST",
-        "KEY_AREAS_TRUST",
         "LAND_USE_TOPOLOGY",
-        "VISUAL_STATIC"
+        "PROFESSIONAL_EVIDENCE"
       ],
-      "evidence_summary_zh": "本深度项由 proposal.md 的可读解释、图纸成果、结构化图层、指标复算和自检结果共同支撑。"
+      "evidence_summary_zh": "全部指标在 EPSG:4548 下自提交 GeoJSON 反读重算，并给出 core/best/outer 三值区间；复算参数完整登记于 assumptions.json。"
     },
     {
       "item_id": "risk_missing_data",
@@ -764,52 +534,40 @@
       "required": true,
       "status": "complete",
       "proposal_sections": [
-        "三层范围工作框架",
-        "总体设计范围城市更新与控规深度城市设计",
-        "重点区域详细设计",
-        "风险、版权与合规说明"
+        "风险、版权与合规说明",
+        "参考资料"
       ],
       "drawing_refs": [
         "drawings/a3-booklet.pdf",
         "drawings/a0-boards.pdf"
       ],
       "geometry_refs": [
-        "geometry/site_boundary.geojson",
-        "geometry/key_areas.geojson",
-        "geometry/land_use.geojson",
-        "geometry/buildings.geojson",
-        "geometry/roads.geojson",
-        "geometry/green_space.geojson",
-        "geometry/public_space.geojson",
-        "geometry/constraints.geojson",
-        "geometry/phasing.geojson"
+        "geometry/constraints.geojson"
       ],
       "metric_refs": [
-        "site_area_sqm",
-        "building_footprint_area_sqm",
-        "green_ratio",
-        "public_space_ratio",
-        "key_area_count"
+        "site_area_sqm"
       ],
       "source_ids": [
-        "SITE-PACKAGE",
-        "SOURCE-REGISTRY",
-        "PROCESSED-FACT-PACK",
-        "OFFICIAL-ANNOUNCEMENT",
         "AGENT-TASKBOOK",
-        "BOUNDARY-SOURCE",
-        "KEY-AREA-SOURCE"
+        "OFFICIAL-ANNOUNCEMENT",
+        "OSM-DERIVED-CORRIDOR-20260808",
+        "OSM-SNAPSHOT-20260808"
       ],
       "assumption_ids": [
-        "A-CONTROLS-001"
+        "A-CONTROLS-001",
+        "A-FRINGE-001",
+        "A-HERITAGE-001",
+        "A-MUNICIPAL-001",
+        "A-RESEARCH-001",
+        "A-ROAD-001",
+        "A-SERVICE-001"
       ],
       "self_check_ids": [
         "BOUNDARY_TRUST",
-        "KEY_AREAS_TRUST",
         "LAND_USE_TOPOLOGY",
-        "VISUAL_STATIC"
+        "PROFESSIONAL_EVIDENCE"
       ],
-      "evidence_summary_zh": "本深度项由 proposal.md 的可读解释、图纸成果、结构化图层、指标复算和自检结果共同支撑。"
+      "evidence_summary_zh": "九项官方资料缺口逐条登记并写明其对可陈述内容的限制；边界不确定性点名至 12 个具体单元。"
     }
   ]
 }
